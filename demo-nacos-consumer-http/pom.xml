@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.rainarmy</groupId>
-    <artifactId>demo-nacos-provider</artifactId>
+    <artifactId>demo-nacos-consumer-http</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>demo-nacos-provider</name>
+    <name>demo-nacos-consumer-http</name>
 
     <parent>
         <groupId>com.rainarmy</groupId>
@@ -40,6 +40,10 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 
