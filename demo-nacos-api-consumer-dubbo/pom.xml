@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.rainarmy</groupId>
-    <artifactId>demo-nacos-provider-http</artifactId>
+    <artifactId>demo-nacos-provider-consumer-dubbo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>demo-nacos-provider-http</name>
+    <name>demo-nacos-provider-consumer-dubbo</name>
 
     <parent>
         <groupId>com.rainarmy</groupId>
@@ -27,13 +27,18 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.rainarmy</groupId>
+            <artifactId>demo-nacos-api-rpc-dubbo</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
